@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>问卷列表</title>
+    <link rel="stylesheet" href="./1-首页（问卷列表）.css">
+    <script defer src="首页.js"></script>
+</head>
+<body onload="hideFirstRow()">
+    <nav class="sitehead">
+        <div class="box1">
+            <div class="box1-1">
+                <svg class="icon" width="100" height="100" viewBox="0 0 100 100">
+                    <circle cx="70" cy="50" r="18" class="circle"></circle>
+                    <text x="70" y="53" class="question-mark" dominant-baseline="middle" text-anchor="middle">?</text>
+                </svg>问卷管理</div>  
+            <div class="box1-2">
+                <a class="Home" href="../1-首页（问卷列表）/1-首页（问卷列表）.html">&nbsp我的问卷&nbsp</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="box2">
+        <div class="surveyCont">
+
+            <div class="list">
+                <div class="item" id="AllTopic">问卷标题</div>
+                <div class="item">创建日期</div>
+                <div class="item">发布日期</div>
+                <div class="item">截止日期</div>
+                <div class="item">问卷状态</div>
+                <div class="item">操作区域</div>
+                <div class="itemButton">
+                    <input type="button" name="" id="" value="+ 新建问卷" onclick="creatnew()">
+                </div>
+            </div>
+            
+            <div style="width: 100%; box-shadow: 3px 3px 5px rgb(190, 190, 190);">
+                <div id="SurveyItem">
+                    <!--
+                    <div class="SurveyOperation">
+                        <div class="detail" style="margin-left: 10px;">
+                            <input type="checkbox" name="chk" id="chk" value="2">
+                            <span>大学生网络成瘾调查2</span>
+                        </div>
+                        <div class="detail">2024/12/23</div>
+                        <div class="detail">未发布</div>
+                        <div class="detail"></div>
+                        <div class="detail"></div>
+                        <div class="detail" style="margin-right: 10px;">
+                            <input type="button" value="发布问卷">
+                            <input type="button" value="编辑问卷">
+                            <input type="button" value="删除问卷" onclick="delrow(this)">
+                            <input type="button" value="查看问卷">
+                            <input type="button" value="填写问卷">
+                            <input type="button" value="数据分析">
+                        </div>
+                    </div>
+                    <hr>
+                    -->
+                </div>
+
+                <div class="quanbu">
+                    <div>
+                        <input type="checkbox" name="tittle" onclick="selectAll(this)">
+                        <span>全选</span>
+                    </div>
+                    <input type="button" name="" value="删除问卷" onclick="choosedel()">
+                    <input type="button" name="" value="刷新" onclick="updateTable()">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-pink:#e1acc8;
+    --main-red:#cb85ab;
+    --main-grey: #ebebeb;
+}
+body{
+    background-color: var(--main-grey);
+    margin: 0;
+    padding-bottom: 60px;
+}
+
+
+/*导航栏*/
+nav{
+    margin-bottom: 60px; /*设置子盒子的上边距*/
+    box-shadow: 0px -3px 20px 0px grey;
+}
+.box1{
+    height: 50px;  /*高度设置为50px*/
+    background-color: var(--main-pink);  /*背景颜色*/
+    display: flex;  /*flex布局*/
+}
+.icon{  /* "?"图标 */
+    .circle {
+        fill: white; /* 圆的填充颜色 */
+    }
+    .question-mark {
+        fill: var(--main-pink); /* 问号的填充颜色 */
+        font-size: 30px;  /*字体大小*/
+        font-weight: bold; /* 字体加粗 */
+    }
+}
+.box1-1{  /*显示“问卷管理”的文字*/
+    display: flex;  /*flex布局*/
+    font-size: 30px;  /*字体大小*/
+    align-items: center;  /*文字垂直居中*/
+    color: white;  /*文字颜色*/
+    font-weight: bold; /*文字粗细*/
+    font-family: 黑体;  /*字体*/
+}
+.box1-2{  /*显示“我的问卷”的文字*/
+    display: flex;  /*flex布局*/
+    align-items: center;  /*文字垂直居中*/
+    font-size: 20px;  /*字体大小*/
+    letter-spacing: 1px; /*文字间距*/
+    margin-left: 3%; /*左边间距*/
+}
+.Home{  /*链接*/
+    text-decoration: none;  /*取消下划线*/
+    color: white;  /*字体颜色*/
+    background-color: var(--main-pink);  /*设置背景颜色*/
+    border-color: var(--main-red);  /*边框颜色*/
+    border-width: 3px;  /*边框宽度*/
+    border-style: solid;  /*设置边框为实线*/
+    padding: 2.5px 0.5px 3px 0.5px;
+}
+.Home:hover{
+    color: var(--main-red);  /*字体颜色*/
+    font-weight: bold;
+    background-color: white;  /*设置背景颜色*/
+}
+/*导航栏*/
+
+.box2{
+    display: grid;
+    align-items: center;  /*垂直居中*/
+    justify-items: center;  /*水平居中*/
+}
+
+.box2-1{
+    width: 85%;
+    background-color: white;
+    display: flex;  /*flex布局*/
+    align-items: center;  /*垂直居中*/
+    justify-items: center;  /*水平居中*/
+    overflow: visible; /* 允许内容溢出 */
+    flex-direction: column;   /*子盒子垂直排列*/
+    box-shadow: 3px 3px 5px rgb(190, 190, 190);
+
+}
+
+/*问卷标题*/
+.SurveyTitle{
+    padding: 20px;
+}
+.input1{
+    border: none;  /*取消文本框在静态下的边框*/
+    outline: none;  /*取消文本框在输入状态下的边框*/
+    font-size: 30px;  /*文本框中字体大小*/
+    font-family: "黑体";
+    font-weight: bold; /*文字粗细*/
+    text-align: center;  /*文本框中的字体居中*/
+}
+
+/*横线*/
+hr{
+    width: 95%;
+    margin: auto; /*水平居中*/
+    height: 0.5px; /*加粗*/
+    background-color: black;
+}
+
+/*问卷内容*/
+#SurveyContent{
+    width: 100%;
+    padding: 20px 30px 20px 30px;
+}
+.question{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    p{
+        font-weight: bold;
+    }
+}
+.answer{
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 15px;
+    input{
+        margin-right: 5px;
+    }
+}
+textarea{
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 2px;
+}
+.necessary{
+    margin-left: 20px;
+}
+
+/*返回键*/
+.btn{
+    margin: 30px;
+    padding: 0 20px;
+    font-size: 1em;
+    text-align: center;
+}
+

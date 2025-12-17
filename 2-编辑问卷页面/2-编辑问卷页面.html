@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新建问卷</title>
+    <link rel="stylesheet" href="./2-编辑问卷页面.css">
+    <script defer src="编辑页面.js"></script>
+</head>
+<body>
+    <nav class="sitehead">
+        <div class="box1">
+            <div class="box1-1">
+                <svg class="icon" width="100" height="100" viewBox="0 0 100 100">
+                    <circle cx="70" cy="50" r="18" class="circle"></circle>
+                    <text x="70" y="53" class="question-mark" dominant-baseline="middle" text-anchor="middle">?</text>
+                </svg>问卷管理</div>  
+            <div class="box1-2">
+                <a class="Home" href="../1-首页（问卷列表）/1-首页（问卷列表）.html">&nbsp我的问卷&nbsp</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="box2">
+        <div class="box2-1">
+            <div class="SurveyTitle">
+                <input type="text" placeholder="请在这里输入问卷的标题" class="input1"> 
+            </div>
+            <hr>
+            <div id="SurveyContent">
+                <div id="surveyDisplay"></div>
+            </div>
+            <div class="SurveyOperation">
+                <div class="Questionoption" id="Questionoption">
+                    <div><button class="button1" id="add1"><img src="./radio.svg" width="11px">单选题</button></div>
+                    <div><button class="button1" id="add2"><img src="./checkbox.svg" width="11px">多选题</button></div>
+                    <div><button class="button1" id="add3"><img src="./text.svg" width="11px">文本题</button></div>
+                </div>
+                <div class="addQuestion" onclick="rise()">
+                    <button class="button2">+ 添加问题</button>
+                </div>
+            </div>
+            <hr>
+            <div class="submit">
+                <div class="deadline">
+                    <span>问卷截止日期</span>
+                    <input type="date">
+                </div>
+                <div class="button">
+                    <button class="return" onclick="ret()">返回主页</button>
+                    <button class="sub">保存问卷</button>
+                    <input type="checkbox" id="publish"/>
+                    <span>发布问卷</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

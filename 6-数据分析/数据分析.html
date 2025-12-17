@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>问卷分析</title>
+    <link rel="stylesheet" href="数据分析.css">
+    <script src="./echarts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts-wordcloud@2/dist/echarts-wordcloud.min.js"></script>
+    <script src="./analysis.js"></script>
+</head>
+<body>
+    <nav class="sitehead">
+        <div class="box1">
+            <div class="box1-1">
+                <svg class="icon" width="100" height="100" viewBox="0 0 100 100">
+                    <circle cx="70" cy="50" r="18" class="circle"></circle>
+                    <text x="70" y="53" class="question-mark" dominant-baseline="middle" text-anchor="middle">?</text>
+                </svg>问卷管理</div>  
+            <div class="box1-2">
+                <a class="Home" href="../1-首页（问卷列表）/1-首页（问卷列表）.html">&nbsp我的问卷&nbsp</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="box2">
+        <div class="divStatData">
+            <div id="surveyTitle" class="input1">查看该问卷</div>
+            <hr>
+            <div id="surveyDisplay" class="survey-content"></div>
+            <hr>
+            <div class="button-container">
+                <input type="button" value="返&nbsp&nbsp回" class="btn" onclick="ret()">
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+</html>

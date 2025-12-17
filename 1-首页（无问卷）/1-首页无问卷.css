@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-pink:#e1acc8;
+    --main-red:#cb85ab;
+    --main-grey: #ebebeb;
+}
+body{
+    background-color: var(--main-grey);
+    margin: 0;
+    padding: 0;
+}
+
+
+/*导航栏*/
+nav{
+    margin-bottom: 60px; /*设置子盒子的上边距*/
+    box-shadow: 0px -3px 20px 0px grey;
+}
+.box1{
+    height: 50px;  /*高度设置为50px*/
+    background-color: var(--main-pink);  /*背景颜色*/
+    display: flex;  /*flex布局*/
+}
+.icon{  /* "?"图标 */
+    .circle {
+        fill: white; /* 圆的填充颜色 */
+    }
+    .question-mark {
+        fill: var(--main-pink); /* 问号的填充颜色 */
+        font-size: 30px;  /*字体大小*/
+        font-weight: bold; /* 字体加粗 */
+    }
+}
+.box1-1{  /*显示“问卷管理”的文字*/
+    display: flex;  /*flex布局*/
+    font-size: 30px;  /*字体大小*/
+    align-items: center;  /*文字垂直居中*/
+    color: white;  /*文字颜色*/
+    font-weight: bold; /*文字粗细*/
+    font-family: 黑体;  /*字体*/
+}
+.box1-2{  /*显示“我的问卷”的文字*/
+    display: flex;  /*flex布局*/
+    align-items: center;  /*文字垂直居中*/
+    font-size: 20px;  /*字体大小*/
+    letter-spacing: 1px; /*文字间距*/
+    margin-left: 3%; /*左边间距*/
+}
+.Home{  /*链接*/
+    text-decoration: none;  /*取消下划线*/
+    color: white;  /*字体颜色*/
+    background-color: var(--main-pink);  /*设置背景颜色*/
+    border-color: var(--main-red);  /*边框颜色*/
+    border-width: 3px;  /*边框宽度*/
+    border-style: solid;  /*设置边框为实线*/
+    padding: 2.5px 0.5px 3px 0.5px;
+}
+.Home:hover{
+    color: var(--main-red);  /*字体颜色*/
+    font-weight: bold;
+    background-color: white;  /*设置背景颜色*/
+}
+/*导航栏*/
+
+
+.box2{
+    background-color: white;
+    margin: auto;
+    width: 92%; /*设置宽度占父盒子的比例*/ 
+    height: 250px;
+    display: grid;
+    align-items: center;  /*文字垂直居中*/
+    justify-items: center;  /*设置文字水平居中*/
+    box-shadow: 3px 3px 5px rgb(190, 190, 190);
+}
+
+
+.createNew{  /*链接*/
+    text-decoration: none;  /*取消下划线*/
+    font-size: 30px;  /*字体大小*/
+    font-weight: bold; /*文字粗细*/
+    font-family: 黑体;  /*字体*/
+    color: white;  /*字体颜色*/
+    background-color: var(--main-pink);  /*设置背景颜色*/
+    border-color: var(--main-red);  /*边框颜色*/
+    border-width: 3px;  /*边框宽度*/
+    border-style: solid;  /*设置边框为实线*/
+    border-radius: 5px; /*圆边框*/
+    padding: 5px 25px;
+    box-shadow: 3px 3px 10px rgb(190, 190, 190);
+}
+.createNew:hover{
+    color: var(--main-pink);  /*字体颜色*/
+    background-color: white;  /*设置背景颜色*/
+}
